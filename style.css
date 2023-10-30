@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('assets/fonts/static/HankenGrotesk-Medium.ttf') format('woff2'), 
+         url('assets/fonts/static/HankenGrotesk-Bold.ttf') format('woff2'), 
+         url('assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('woff2'),
+         url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('woff2');
+
+    font-weight: 500, 700, 800; 
+    font-style: normal; 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.card{
+    width: 700px;
+    height: 500px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 7px rgba(148, 148, 148, 0.5);
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.card-result{
+    width: 50%;
+    height: 100%;
+    border-radius:30px ;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    row-gap: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-result__title{
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    color: hsl(241, 100%, 89%) ;
+    margin-bottom: 8%;
+}
+
+.circle{
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 50%;
+    height: 30%;
+    padding: 20px;
+    color:  hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+  
+}
+.card-score{
+    font-size: 60px;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+
+}
+.card-score-text{
+    font-size: 18px;
+    font-weight: 500;
+    color :hsl(241, 100%, 89%);
+}
+
+.card-content{
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+
+.content-title{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 8%;
+    color:  hsl(0, 0%, 100%);
+
+}
+.content-body{
+    font-size: 16px;
+    color :hsl(241, 100%, 89%);
+
+}
+
+.card-summary{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    margin: 5%;
+}
+
+.summary-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(224, 30%, 27%);
+    margin: 20px 0; 
+    align-self: flex-start;
+}
+
+.summary-item {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    
+}
+
+.item {
+    display: flex;
+    margin: 10px 0; 
+    border-radius: 13px;
+    padding: 6%;
+}
+.summary-item li:nth-child(1)  {
+    background-color: hsla(0, 100%, 67%, 0.062);
+     
+}
+
+.summary-item li:nth-child(2) {
+    background-color: hsla(39, 100%, 56%, 0.13); 
+}
+
+.summary-item li:nth-child(3) {
+    background-color: hsla(166, 100%, 37%, 0.082); 
+}
+
+.summary-item li:nth-child(4) {
+    background-color: hsla(234, 85%, 45%, 0.116); 
+}
+
+
+.item-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 4%;
+}
+.item-score{
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: auto;
+    color: hsla(224, 30%, 27%, 0.644);
+}
+.score-bold{
+    font-size: 18px;
+    font-weight: 800;
+    color: hsl(224, 30%, 27%);
+}
+
+button{
+    padding: 6%;
+    border-radius: 30px;
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    margin: 6% 0;
+    transition: background-color 3s ease;    
+   
+}
+button:hover{
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    transition: background-color 3s ease;
+}
+.attribution{
+    margin-top: 20px;
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%);
+     }
+
+
+@media (max-width: 700px) {
+    .card {
+        width: 70%;
+        height: 80%;
+        flex-direction: column; 
+        height: auto;
+    }
+
+    .card-result {
+        width: 100%; 
+        height: auto;
+    }
+    .card-result__title{
+        margin-top: 10%;
+    }
+    
+.circle{
+   
+    width: 40%;
+    height: 35%;
+    padding: 20px;
+   
+    
+
+  
+}
+
+    .card-summary {
+        width: 90%; 
+    }
+}
